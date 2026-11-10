@@ -1,0 +1,7 @@
+.venv/
+outputs/
+models/
+__pycache__/
+*.py[cod]
+.DS_Store
+.python-version

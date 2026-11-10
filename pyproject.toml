@@ -1,0 +1,25 @@
+[project]
+name = "gpt2-finetune"
+version = "0.1.0"
+description = "LoRA fine-tune of openai-community/gpt2 on TinyStories"
+readme = "README.md"
+authors = [
+    { name = "Omar Al-Shareef", email = "76852354+alshareef99-design@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.15.0",
+    "datasets>=5.2.0",
+    "peft>=0.13",
+    "safetensors>=0.8.0",
+    "torch>=2.15.0",
+    "transformers>=4.46",
+    "trl>=0.12",
+]
+
+[project.scripts]
+gpt2-finetune = "gpt2_finetune:main"
+
+[build-system]
+requires = ["uv_build>=0.12.9,<0.13.0"]
+build-backend = "uv_build"
