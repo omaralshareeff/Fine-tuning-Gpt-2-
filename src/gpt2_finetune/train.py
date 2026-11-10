@@ -13,7 +13,7 @@ from trl import SFTConfig, SFTTrainer
 MODEL_PATH = "models/gpt2"
 DATASET_ID = "roneneldan/TinyStories"
 OUTPUT_DIR = "outputs/gpt2-tinystories-lora"
-PROMPT = "Once upon a time there was a little boy named Messi."
+PROMPT = "Once upon a time there was a little boy named Messi"
 MIN_STORY_CHARS = 40
 
 
